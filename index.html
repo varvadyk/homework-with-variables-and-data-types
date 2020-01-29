@@ -23,6 +23,33 @@
     console.log(sum_whole_products);
     Math.floor(sum_whole_products);
     console.log(sum_whole_products);
+  let sum_hundread=(Math.ceil((229.8775) * 100)/100);
+  console.log(sum_hundread);
+  let bool_value= !!(Math.floor(sum_products) % 2) == 0;
+    console.log(bool_value);
+    let sum_client=500-sum_products;
+    console.log(sum_client);
+
+
+
+    let  discount= Math.random();
+    console.log(discount.toFixed(2) * 100);
+
+
+    alert(`
+    Максимальне число: ${max_numbers}
+    Мінімальне число: ${min_numbers}
+    Сума всіх товарів: ${sum_products}
+    Ціла частина вартості всіх товарів округлених в меншу сторону:${sum_whole_products}
+    Сума товарів округлена до сотень: ${sum_hundread}
+    Вивід булевого значення:${bool_value}
+    Сума здачі з 500 грн:${sum_client}
+
+    Середнє значення
+
+    Випадкова скидка:${discount}
+    `
+    );
     </script>
 </body>
 </html>
