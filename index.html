@@ -9,28 +9,29 @@
 </head>
 <body>
 <script>
-    let price_bread = 15.678;
-    let price_coffe = 123.965;
-    let price_chocolate = 90.2345;
-    let max_numbers = Math.max(15.678,123.965,90.2345);
+    const price_bread = 15.678;
+    const price_coffe = 123.965;
+    const price_chocolate = 90.2345;
+    let max_numbers = Math.max(price_bread,price_coffe,price_chocolate );
     console.log("Max_mumber product" + max_numbers);
-    let min_numbers = Math.min(15.678,123.965,90.2345);
+    let min_numbers = Math.min(price_bread,price_coffe,price_chocolate);
     console.log("Min_mumber product" +min_numbers);
-     let sum_products = price_bread + price_coffe +price_chocolate;
-     console.log("Suma products" + sum_products);
-     let sum_whole_products =Math.floor(price_bread) + Math.floor(price_coffe ) + Math.floor(price_chocolate);
+    let sum_products = price_bread + price_coffe +price_chocolate;
+    console.log("Suma products" + sum_products);
+    let sum_whole_products =Math.floor(price_bread) + Math.floor(price_coffe ) + Math.floor(price_chocolate);
     console.log("Suma whole products" + sum_whole_products);
     Math.floor(sum_whole_products);
     console.log("Suma whole products rounding down into smaller pages"+ sum_whole_products);
-  let sum_hundread = (Math.ceil((price_bread + price_coffe + price_chocolate) * 100)/100);
-  console.log("Suma products rounded to hundreds"+sum_hundread);
-  let bool_value = !!(Math.floor(sum_products) % 2) == 0;
+    let sum_hundread = (Math.ceil((price_bread + price_coffe + price_chocolate) * 100)/100);
+    console.log("Suma products rounded to hundreds"+sum_hundread);
+    let bool_value = !!(Math.floor(sum_products) % 2) === 0;
     console.log("Bool value " + bool_value);
-    let sum_client = 500 - sum_products;
+    let money_client=500;
+    let sum_client = money_client - sum_products;
     console .log("Suma client pay 500grn"+ sum_client);
     let number_product=3;
-  let average_value =(sum_products/number_product).toFixed(2);
-  console.log("Average value prices"+ average_value)
+    let average_value =(sum_products/number_product).toFixed(2);
+    console.log("Average value prices"+ average_value)
 
     let  discount = Math.random();
     console.log("Random discount" + discount.toFixed(2) * 100);
@@ -39,9 +40,6 @@
     let total_cost=Math.floor(sum_products/2);
     let lost_profit =total_cost-Math.trunc(sum_products * discount / 100);
     console.log("Lost profit" + lost_profit);
-
-
-
 
     alert(`
     Максимальне число: ${max_numbers}
