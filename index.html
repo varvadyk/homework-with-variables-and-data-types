@@ -24,7 +24,7 @@
     console.log("Suma whole products rounding down into smaller pages"+ sum_whole_products);
     let sum_hundread = (Math.ceil((price_bread + price_coffe + price_chocolate) * 100)/100);
     console.log("Suma products rounded to hundreds"+sum_hundread);
-    let bool_value = !!(Math.floor(sum_products) % 2) === 0;
+    bool_value = (Math.floor(sum_products) % 2) === 0;
     console.log("Bool value " + bool_value);
     let money_client=500;
     let sum_client = money_client - sum_products;
